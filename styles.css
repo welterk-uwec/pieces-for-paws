@@ -52,7 +52,7 @@ header nav a{
     padding: 1.3rem;
     border:1px solid #fff;
 
-    font-size: 3vw;
+    font-size: vw;
 }
 
 header nav{
@@ -558,9 +558,7 @@ footer a:hover{
   text-decoration: underline;
 }
 
-
-
-
+@media (min-width:437){}
 
 @media (max-width:436px){
   .hamburger hr{
@@ -584,43 +582,45 @@ footer a:hover{
   ul::scroll-button(left) {
   right: calc(anchor(left) - 70px);
   bottom: calc(anchor(top) - 130px);
+  }
+
+  ul::scroll-button(right) {
+    left: calc(anchor(right) - 70px);
+    bottom: calc(anchor(top) - 130px);
+  }
+
+  .see-more h3{
+    font-size: 13px;
+  }
+
+  footer img{
+    width:15rem;
+  }
+
+  input[type=text], [type=tel], [type=email]{
+      margin: .3rem;
+      font-size: 1rem;
+      border:1px solid transparent;
+
+  }
+
+  label{
+    padding-top: 1rem;
+  }
+
+  .contact{
+    margin: 2rem;
+
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .contact p{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-ul::scroll-button(right) {
-  left: calc(anchor(right) - 70px);
-  bottom: calc(anchor(top) - 130px);
-}
 
-.see-more h3{
-  font-size: 13px;
-}
-
-footer img{
-  width:15rem;
-}
-
-input[type=text], [type=tel], [type=email]{
-    margin: .3rem;
-    font-size: 1rem;
-    border:1px solid transparent;
-
-}
-
-label{
-  padding-top: 1rem;
-}
-
-.contact{
-  margin: 2rem;
-
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.contact p{
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
 @media (min-width:970px){
    header{
