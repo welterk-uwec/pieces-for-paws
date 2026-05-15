@@ -111,18 +111,38 @@ header img{
 }
 
 
-.about-us p{
+.about-us{
     background-color: #ed92b6;
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
+.about-us a{
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 1rem;
+
+  font-weight: 500;
+}
+
+
+.text-gallery h2{
+  padding-top:0;
+}
 
 
 /* fancy carousel things*/
 
 
 .gallery img{
-    width: 28rem;
+    width: 100%;
 
+}
+
+.gallery2 img{
+  height: 80%;
 }
 
 * {
@@ -136,10 +156,7 @@ body {
 
 ul {
   width: 100vw;
-  height: 360px;
-  padding-top: 0px;
-  padding-bottom: 20px;
-  padding-left: 40px;
+  height: 65vw;
   padding-right: 40px;
   display: flex;
   gap: 10vw;
@@ -155,6 +172,9 @@ li {
 
   flex: 0 0 100%;
 }
+
+
+
 
 ul {
   overflow-x: scroll;
@@ -202,13 +222,13 @@ ul::scroll-button(*) {
 }
 ul::scroll-button(left) {
   right: calc(anchor(left) - 70px);
-  bottom: calc(anchor(top) - 200px);
+  bottom: calc(anchor(top) - 180px);
   
 }
 
 ul::scroll-button(right) {
   left: calc(anchor(right) - 70px);
-  bottom: calc(anchor(top) - 200px);
+  bottom: calc(anchor(top) - 180px);
 }
 
 
@@ -239,18 +259,27 @@ ul::scroll-button(right) {
   background-color: #67c7f1;
   color: #fff;
   text-decoration: none;
-
-  margin-left: 6rem;
-  margin-right: 6rem;
-
-  padding: 1rem;
+  
  border-radius: 20px;
   font-weight: 600;
 
   display:flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-content: center;
   
+}
+
+.see-more a{
+
+  padding: 0rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  
+}
+
+.see-more h3{
+  font-size: 15px;
 }
 
 /*events*/
@@ -271,8 +300,12 @@ ul::scroll-button(right) {
 }
 
 .upcoming-events img{
-  width:12rem;
+  width: 40%;
   margin: 1rem;
+}
+
+.upcoming h2{
+  margin-bottom: .5rem;
 }
 
 /*events calendar*/
@@ -354,18 +387,25 @@ ul::scroll-button(right) {
 
 /*about us*/
 
-.about-us h3{
-  margin-left: 1rem;
-  padding: .6rem;
+.about-h h3{
+  margin-left: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact{
   background-color: #ed92b6;
-  margin: 1rem;
+  margin: 2rem;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40% 1fr;
   grid-template-rows: 3rem 1fr;
+}
+
+.contact p{
+  color: #fff;
+  padding: 1rem 2rem 1rem 2rem;
+  
+
 }
 
 .contact .one{
@@ -378,12 +418,12 @@ ul::scroll-button(right) {
   font-size: 20px;
 
   justify-content: flex-start;
+  
 }
 
 .contact .two{
   grid-row: 2 / 3;
   grid-column: 1 / 2;
-  padding: 0;
 }
 
 .contact .two p{
@@ -397,11 +437,60 @@ ul::scroll-button(right) {
 
 .contact .three p{
   justify-content: flex-start;
+  font-size: 15px;
 }
 
+/*Form*/
 
+.container{
+  background-color: #ed92b6;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
 
+form{
+  
+  padding: 1rem;
+}
 
+label, input[type=text], [type=tel], [type=email]{
+  display:inline-block;
+
+  text-decoration: none;
+  font-weight: 500;
+}
+
+label{
+  color: white;
+  padding-top: 2rem;
+}
+
+input[type=text], [type=tel], [type=email]{
+  width: 95%;
+    padding: 1rem;
+    margin: .5rem;
+    font-size: 1rem;
+    border:1px solid transparent;
+
+}
+
+input[type=submit]{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+
+  background-color: #67c7f1;
+  border:1px solid transparent;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.submit{
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+}
 
 
 
