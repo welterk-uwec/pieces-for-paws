@@ -193,6 +193,7 @@ ul {
 li {
   scroll-snap-align: center;
 }
+
 ul::scroll-button(*) {
   border: 0;
   font-size: 2.5rem;
@@ -202,8 +203,7 @@ ul::scroll-button(*) {
   cursor: pointer;
 }
 
-ul::scroll-button(*):hover,
-ul::scroll-button(*):focus {
+ul::scroll-button(*):hover, ul::scroll-button(*):focus {
   opacity: 1;
 }
 
@@ -215,6 +215,7 @@ ul::scroll-button(*):disabled {
   opacity: 0.2;
   cursor: unset;
 }
+
 ul::scroll-button(left) {
   content: "◄" / "Previous";
 }
@@ -222,6 +223,7 @@ ul::scroll-button(left) {
 ul::scroll-button(right) {
   content: "►" / "Next";
 }
+
 ul {
   anchor-name: --my-carousel;
 }
@@ -312,7 +314,6 @@ ul::scroll-button(right) {
 .event{
   background-color: #1681a5;
   color: #fff;
-  margin: rem;
   padding: 1rem;
   width: 50%;
 }
@@ -538,7 +539,6 @@ input[type=submit]:hover{
 
 footer{
   background-color: #ed92b6;
-  color: none;
   text-decoration: none;
   border: none;
 }
@@ -746,5 +746,27 @@ footer a:hover{
   padding-top: 2rem;
   padding-left: .5rem;
   }
+
+
+  .about-h h3{
+  font-size: 30px;
+}
+
+.contact p{
+  font-size: 20px;
+
+}
+
+.contact .one p{
+  font-size: 25px;
+}
+
+.contact .three p{
+  font-size: 20px;
+}
+
+.about-us p{
+  font-size: 25px;
+}
 
 }
